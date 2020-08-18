@@ -1,5 +1,7 @@
 module.exports = {
 	name: 'ola',
+	cooldown: 5,
+	aliases: ['oi', 'hello','hi'],
 	description: 'mensagens de ola',
 	execute(message, args) {
 
