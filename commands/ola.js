@@ -1,6 +1,6 @@
 module.exports = {
 	name: 'ola',
-	description: 'Quem sou eu!',
+	description: 'mensagens de ola',
 	execute(message, args) {
 
 		const chose = Math.floor(Math.random() * 5);

@@ -13,8 +13,18 @@ for (const file of commandFiles) {
 }
 
 client.once('ready', () => {
-	console.log('Pronto!');
+	console.log('Estou Pronto!');
+	client.user.setActivity('Ajustando o nivel de sarcasmo');
+	client.user.setUsername('TARS');
 });
+
+client.on("guildCreate",guild =>{
+	console.log(`Bot adicionado no servidor  ${guild.name}`);
+})
+
+client.on("guildDelete",guild =>{
+	console.log(`Bot Removido do servidor  ${guild.name}`);
+})
 
 client.on('message', message => {
 	if (!message.content.startsWith(prefix) || message.author.bot) return;
