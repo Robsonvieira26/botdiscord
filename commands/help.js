@@ -33,7 +33,7 @@ module.exports = {
 				});
 		}
 
-		const name = args[0].toLowerCase();
+		const name = args.shift().toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');;
 		const command = commands.get(name) || commands.find(c => c.aliases && c.aliases.includes(name));
 
 		if (!command) {
