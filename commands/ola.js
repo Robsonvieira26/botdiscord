@@ -14,6 +14,7 @@ module.exports = {
         break;
       case 2:
         message.channel.send('Você de novo aqui??');
+        message.react('🤬');
         break;
       case 3:
         message.channel.send(
@@ -22,6 +23,7 @@ module.exports = {
         break;
       case 4:
         message.channel.send('Oi casado! :hearts:');
+        message.react('😏');
         break;
       default:
         message.channel.send('Ei isso não era pra acontecer! 😕');

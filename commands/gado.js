@@ -8,12 +8,14 @@ module.exports = {
         message.channel.send(
           `${message.author} a gente ja sabe que você é gado!`
         );
+        message.react('🐮');
         break;
 
       case 1:
         message.channel.send(
           `Vou falar sua lingua ${message.author} Muuuuuuuuuuuuuuuuuuuuuuu!`
         );
+        message.react('🐮');
         break;
       default:
         message.channel.send('Ei isso não era pra acontecer! 😕');
