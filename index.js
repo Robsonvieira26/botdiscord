@@ -21,6 +21,8 @@ for (const file of commandFiles) {
  
 client.on('ready', () => {
     console.log('bot is online!');
+    client.user.setActivity('Test Features TARS');
+	client.user.setUsername('TARS');
 });
 
 client.on('message', message => {
@@ -31,12 +33,14 @@ client.on('message', message => {
   const command = args.shift().toLowerCase();
  
 
-            
+        if(message.author.id=="482962029531889694")  
         if (command === 'cargos') 
         client.commands.get('cargos').execute(message, args, Discord, client, channel);
-        // if (command === '4p')      
-        //     client.commands.get('4p').execute(message, args, Discord, client, channel);
-    
+        if (command === 'info') 
+        client.commands.get('info').execute(message, args, Discord);
+
+
+        
 
 });
 

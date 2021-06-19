@@ -105,8 +105,8 @@ const ccoEmoji = '🇦';
       const aaEmoji = '🇧';
       const gbdEmoji = '🇨';
       const mdsEmoji ='🇩';
-      const poo2Emoji ='🇫';
-      const arcEmoji ='🇪';
+      const poo2Emoji ='🇪';
+      const arcEmoji ='🇫';
 //6p
 const gestaoEmoji = '❤️';
       const tcEmoji = '🧡';
@@ -649,4 +649,5 @@ await reaction.message.guild.members.cache.get(user.id).roles.remove(noticiasRol
       return;
     }
   });
-}   }
+}   
+}
